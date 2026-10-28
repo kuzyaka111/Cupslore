@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#382c22">
+  <meta name="description" content="Чаши: база знаний сеттинга, источники двух Discord-серверов и проверка разночтений.">
+  <title>Чаши — база знаний</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="data/content.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <a class="skip" href="#main">К содержимому</a>
+  <header class="masthead">
+    <div class="brand"><a href="#information" aria-label="Чаши — главная"><span class="mark" aria-hidden="true">◒</span>Чаши<span class="brand-caption">БАЗА ЗНАНИЙ</span></a></div>
+    <div class="edition">Два сервера · один справочник<br><span>Сверено 26 октября 2026</span></div>
+  </header>
+  <div class="topbar">
+    <nav class="tabs" aria-label="Основные разделы">
+      <a href="#sources" data-tab="sources">Источники <span id="source-count">2</span></a>
+      <a href="#information" data-tab="information">Информация <span id="article-count">22</span></a>
+      <a href="#problems" data-tab="problems">Расхождения и проблемы <span id="problem-count">29</span></a>
+    </nav>
+  </div>
+  <div class="layout">
+    <aside id="sidebar" aria-label="Навигация по разделу"></aside>
+    <main id="main" tabindex="-1">
+      <noscript>Для переключения вкладок и поиска включи JavaScript. Полные данные доступны в <a href="data/content.json">файле источников и статей</a>.</noscript>
+      <div id="intro"></div>
+      <div class="tools"><label class="search"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Найти в разделе…" aria-label="Поиск в текущем разделе"><button id="clear" type="button" aria-label="Очистить поиск" hidden>×</button></label><span id="result-count" role="status" aria-live="polite"></span></div>
+      <div id="filters"></div>
+      <div id="content"><p class="loading">Открываем записи…</p></div>
+    </main>
+  </div>
+  <footer>Чаши · Источники сохранены с авторскими формулировками. Спорные версии не сведены к единому канону без решения автора. <a href="https://github.com/kuzyaka111/Cupslore">Репозиторий</a></footer>
+  <dialog id="viewer"><div class="viewer-bar"><span id="image-caption"></span><button id="close-viewer" type="button">Закрыть ×</button></div><img alt=""><a id="image-original" target="_blank" rel="noopener">Открыть изображение отдельно ↗</a></dialog>
+</body>
+</html>
